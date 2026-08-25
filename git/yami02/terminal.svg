@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="423" viewBox="0 0 640 423">
+  <defs>
+    <pattern id="sl" x="0" y="0" width="640" height="4" patternUnits="userSpaceOnUse">
+      <rect width="640" height="2" fill="rgba(0,0,0,0.11)"/>
+    </pattern>
+    <clipPath id="frame"><rect width="640" height="423" rx="6"/></clipPath>
+    <filter id="glow" x="-8%" y="-8%" width="116%" height="116%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.1" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="640" height="423" fill="#050a05"/>
+    <rect width="640" height="32" fill="#0d1a0d"/>
+    <rect y="31" width="640" height="1" fill="#1c3a1c"/>
+    <circle cx="14" cy="16" r="5" fill="#ff5f56"/>
+  <circle cx="30" cy="16" r="5" fill="#ffbd2e"/>
+  <circle cx="46" cy="16" r="5" fill="#27c93f"/>
+    <text x="320" y="20" text-anchor="middle"
+      font-family="monospace" font-size="11" fill="#3a6a3a"
+    >root@yami02 :: intrusion terminal</text>
+    <g filter="url(#glow)">
+
+  <text id="e0" x="18" y="59"
+    font-family="monospace" font-size="13" fill="#39FF14" opacity="0"
+  >root@yami02:~# <animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;1.7295%;1.7295%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e1-t" x="135.6" y="59"
+    font-family="monospace" font-size="13" fill="#e0e8e0" opacity="0"
+  >whoami<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;1.7295%;1.7295%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <rect id="e1-m" x="135.6" y="44"
+    width="52" height="17" fill="#050a05" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0"
+      keyTimes="0.0000%;1.7295%;1.7295%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="52;52;0;0;52"
+      keyTimes="0.0000%;1.7295%;4.8426%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+  </rect>
+  <rect id="e1-cur" x="135.6" y="47"
+    width="7" height="14" fill="#39FF14" opacity="0">
+    <animate attributeName="opacity"
+      values="0;0;1;0;1;0;1;0;0;0"
+      keyTimes="0.0000%;1.7295%;2.4213%;3.8049%;5.1885%;6.5721%;4.8426%;4.8426%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+  </rect>
+  <text id="e2" x="22" y="79"
+    font-family="monospace" font-size="13" fill="#39FF14" opacity="0"
+  >[+] yami02 :: Security Intern<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;7.4715%;7.4715%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e3" x="22" y="99"
+    font-family="monospace" font-size="13" fill="#00FFFF" opacity="0"
+  >[*] loc: Belo Horizonte, MG — BR<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;8.3708%;8.3708%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e4" x="22" y="119"
+    font-family="monospace" font-size="13" fill="#00FFFF" opacity="0"
+  >[*] UFMG (Math) · IFES (IT/Networks)<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;9.2701%;9.2701%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e5" x="22" y="139"
+    font-family="monospace" font-size="13" fill="#00FFFF" opacity="0"
+  >[*] mode: OFFENSIVE<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;10.1695%;10.1695%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e6" x="18" y="165"
+    font-family="monospace" font-size="13" fill="#39FF14" opacity="0"
+  >root@yami02:~# <animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;19.0246%;19.0246%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e7-t" x="135.6" y="165"
+    font-family="monospace" font-size="13" fill="#e0e8e0" opacity="0"
+  >nmap -sV --open 10.0.1.1<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;19.0246%;19.0246%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <rect id="e7-m" x="135.6" y="150"
+    width="193" height="17" fill="#050a05" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0"
+      keyTimes="0.0000%;19.0246%;19.0246%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="193;193;0;0;193"
+      keyTimes="0.0000%;19.0246%;31.4770%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+  </rect>
+  <rect id="e7-cur" x="135.6" y="153"
+    width="7" height="14" fill="#39FF14" opacity="0">
+    <animate attributeName="opacity"
+      values="0;0;1;0;1;0;1;0;0;0"
+      keyTimes="0.0000%;19.0246%;19.7164%;21.1000%;22.4836%;23.8672%;31.4770%;31.4770%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+  </rect>
+  <text id="e8" x="22" y="185"
+    font-family="monospace" font-size="13" fill="#b8d8b8" opacity="0"
+  >PORT    STATE SERVICE  VERSION<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;34.1058%;34.1058%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e9" x="22" y="205"
+    font-family="monospace" font-size="13" fill="#b8d8b8" opacity="0"
+  >22/tcp  open  ssh      OpenSSH 8.9p1<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;35.0052%;35.0052%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e10" x="22" y="225"
+    font-family="monospace" font-size="13" fill="#b8d8b8" opacity="0"
+  >80/tcp  open  http     Apache 2.4.52<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;35.9045%;35.9045%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e11" x="22" y="245"
+    font-family="monospace" font-size="13" fill="#FFE900" opacity="0"
+  >[!] CVE-2021-41773 detected on :80<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;36.8039%;36.8039%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e12" x="18" y="271"
+    font-family="monospace" font-size="13" fill="#39FF14" opacity="0"
+  >root@yami02:~# <animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;45.6589%;45.6589%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e13-t" x="135.6" y="271"
+    font-family="monospace" font-size="13" fill="#e0e8e0" opacity="0"
+  >python3 exploit.py --target 10.0.1.1<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;45.6589%;45.6589%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <rect id="e13-m" x="135.6" y="256"
+    width="287" height="17" fill="#050a05" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0"
+      keyTimes="0.0000%;45.6589%;45.6589%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="287;287;0;0;287"
+      keyTimes="0.0000%;45.6589%;64.3376%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+  </rect>
+  <rect id="e13-cur" x="135.6" y="259"
+    width="7" height="14" fill="#39FF14" opacity="0">
+    <animate attributeName="opacity"
+      values="0;0;1;0;1;0;1;0;0;0"
+      keyTimes="0.0000%;45.6589%;46.3507%;47.7343%;49.1180%;50.5016%;64.3376%;64.3376%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+  </rect>
+  <text id="e14" x="22" y="291"
+    font-family="monospace" font-size="13" fill="#00FFFF" opacity="0"
+  >[*] sending payload...<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;66.9664%;66.9664%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e15" x="22" y="311"
+    font-family="monospace" font-size="13" fill="#39FF14" opacity="0"
+  >[+] RCE confirmed<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;67.8658%;67.8658%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e16" x="22" y="331"
+    font-family="monospace" font-size="13" fill="#39FF14" opacity="0"
+  >[+] uid=0(root) gid=0(root) groups=0(root)<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;68.7651%;68.7651%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e17" x="18" y="357"
+    font-family="monospace" font-size="13" fill="#39FF14" opacity="0"
+  >root@yami02:~# <animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;77.6202%;77.6202%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <text id="e18-t" x="135.6" y="357"
+    font-family="monospace" font-size="13" fill="#e0e8e0" opacity="0"
+  >cat /flag.txt<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;77.6202%;77.6202%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+  <rect id="e18-m" x="135.6" y="342"
+    width="106" height="17" fill="#050a05" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0"
+      keyTimes="0.0000%;77.6202%;77.6202%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="106;106;0;0;106"
+      keyTimes="0.0000%;77.6202%;84.3653%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+  </rect>
+  <rect id="e18-cur" x="135.6" y="345"
+    width="7" height="14" fill="#39FF14" opacity="0">
+    <animate attributeName="opacity"
+      values="0;0;1;0;1;0;1;0;0;0"
+      keyTimes="0.0000%;77.6202%;78.3120%;79.6956%;81.0792%;82.4628%;84.3653%;84.3653%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/>
+  </rect>
+  <text id="e19" x="22" y="377"
+    font-family="monospace" font-size="13" fill="#39FF14" opacity="0"
+  >[+] flag{y4m1_w4s_h3r3_4nd_l3ft_n0_tr4c3}<animate attributeName="opacity"
+      values="0;0;1;1;0;0"
+      keyTimes="0.0000%;86.9941%;86.9941%;95.8492%;95.8492%;100%"
+      dur="14.46s" repeatCount="indefinite"/></text>
+    </g>
+    <rect width="640" height="423" fill="url(#sl)" opacity="0.65"/>
+    <rect width="640" height="3" fill="rgba(0,255,255,0.04)">
+      <animate attributeName="y" from="-3" to="423" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="639" height="422" x="0.5" y="0.5"
+      fill="none" stroke="#1c3a1c" stroke-width="1" rx="6"/>
+  </g>
+</svg>

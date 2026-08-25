@@ -1,0 +1,15 @@
+{
+  "name": "yami02-profile",
+  "version": "2.0.0",
+  "description": "Cyber Bonsai :: GitHub profile automation",
+  "private": true,
+  "scripts": {
+    "bonsai": "ts-node scripts/generate-bonsai.ts",
+    "bonsai:watch": "nodemon --ext ts --exec 'ts-node scripts/generate-bonsai.ts'"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

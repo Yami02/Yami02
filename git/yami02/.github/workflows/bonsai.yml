@@ -1,0 +1,53 @@
+# ╔══════════════════════════════════════════════════════════════╗
+# ║  TERMINAL SVG :: GitHub Actions Workflow                     ║
+# ║  侵入端末 自動更新システム                                        ║
+# ║  Runs daily at midnight — updates terminal.svg               ║
+# ╚══════════════════════════════════════════════════════════════╝
+
+name: 💻 Terminal Update
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "terminal.svg"
+      - "README.md"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    name: ⚡ Generate terminal.svg
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: ⚙️  Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 💻 Generate terminal SVG
+        env:
+          OUTPUT_FILE: ${{ github.workspace }}/terminal.svg
+        run: node scripts/generate-terminal.js
+
+      - name: 💾 Commit terminal.svg
+        run: |
+          git config --local user.email "terminal-bot@yami02.dev"
+          git config --local user.name  "Terminal Bot 💻"
+          git add terminal.svg
+          if git diff --staged --quiet; then
+            echo "[TERMINAL] No changes."
+          else
+            git commit -m "💻 terminal: update $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "[TERMINAL] ✅ terminal.svg pushed."
+          fi
