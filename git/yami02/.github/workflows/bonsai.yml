@@ -39,15 +39,15 @@ jobs:
           OUTPUT_FILE: ${{ github.workspace }}/terminal.svg
         run: node scripts/generate-terminal.js
 
-      - name: 💾 Commit terminal.svg
+      - name: 💾 Commit SVGs
         run: |
           git config --local user.email "terminal-bot@yami02.dev"
           git config --local user.name  "Terminal Bot 💻"
-          git add terminal.svg
+          git add terminal.svg certs.svg
           if git diff --staged --quiet; then
             echo "[TERMINAL] No changes."
           else
-            git commit -m "💻 terminal: update $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git commit -m "💻 svgs: update $(date -u '+%Y-%m-%d %H:%M UTC')"
             git push
-            echo "[TERMINAL] ✅ terminal.svg pushed."
+            echo "[TERMINAL] ✅ terminal.svg + certs.svg pushed."
           fi

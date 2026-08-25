@@ -37,21 +37,9 @@ uid=0(yami02)  gid=1337(elite)  loc=BH/MG/BR  mode=OFFENSIVE
 
 ---
 
-```
-root@yami02:~# cat certs/roadmap.txt
-
-  ┌─── CERTIFICATIONS ───────────────────────────────┐
-  │                                                  │
-  │  [ INCOMING ]                                    │
-  │  ▸ eJPT  — eLearnSecurity Junior PenTester       │
-  │  ▸ CompTIA Security+                             │
-  │                                                  │
-  │  [ QUEUED ]                                      │
-  │  ▸ TCM Security PNPT                             │
-  │  ▸ OSCP                           someday...     │
-  │                                                  │
-  └──────────────────────────────────────────────────┘
-```
+<div align="center">
+<img src="certs.svg" width="640" alt="cert roadmap · root@yami02" />
+</div>
 
 <!-- flag{k33p_hunt1ng_c3rts} -->
 <!-- ZmxhZ3toNGNrX3RoM19wbDRuM3R9 -->

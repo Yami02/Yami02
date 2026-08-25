@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="228" viewBox="0 0 640 228">
+  <defs>
+    <clipPath id="cf"><rect width="640" height="228" rx="6"/></clipPath>
+    <filter id="gf" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="sl2" x="0" y="0" width="640" height="3" patternUnits="userSpaceOnUse">
+      <rect width="640" height="1" y="1" fill="rgba(0,0,0,0.08)"/>
+    </pattern>
+  </defs>
+  <g clip-path="url(#cf)">
+    <rect width="640" height="228" fill="#050a05"/>
+
+    <!-- chrome -->
+    <rect width="640" height="28" fill="#0d1a0d"/>
+    <rect y="27" width="640" height="1" fill="#1c3a1c"/>
+    <circle cx="14" cy="14" r="4" fill="#ff5f56"/>
+    <circle cx="28" cy="14" r="4" fill="#ffbd2e"/>
+    <circle cx="42" cy="14" r="4" fill="#27c93f"/>
+    <text x="320" y="18" text-anchor="middle"
+      font-family="monospace" font-size="10" fill="#3a6a3a"
+    >⛏  root@yami02:~# cat certs/roadmap.txt</text>
+
+    <!-- rows -->
+    <g filter="url(#gf)">
+      
+  <!-- ── eJPT ── -->
+  <g>
+    <!-- label -->
+    <text x="20" y="49"
+      font-family="monospace" font-size="11" font-weight="bold" fill="#39FF14"
+    >eJPT</text>
+
+    <!-- badge -->
+    <rect x="76" y="38" width="62" height="14"
+      fill="#1a1a00" rx="2"/>
+    <text x="79" y="48"
+      font-family="monospace" font-size="9" fill="#FFE900"
+    >INCOMING</text>
+
+    <!-- full name -->
+    <text x="20" y="64"
+      font-family="monospace" font-size="9" fill="#3a6a3a"
+    >eLearnSecurity Junior PenTester</text>
+
+    <!-- bar track -->
+    <rect x="88" y="66" width="494" height="8"
+      fill="#111a11" rx="2"/>
+    <rect x="88" y="66" width="494" height="8"
+      fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
+
+    <!-- bar fill (animated grow) -->
+    
+    <rect x="89" y="67" width="0" height="6"
+      fill="#39FF14" rx="1">
+      <animate attributeName="width"
+        from="0" to="221"
+        dur="3s" begin="0s" fill="freeze"/>
+    </rect>
+    
+    <rect x="308" y="67" width="2" height="6"
+      fill="#ffffff" opacity="0.8" rx="0">
+      <animate attributeName="x"
+        from="88" to="308"
+        dur="3s" begin="0s" fill="freeze"/>
+      <animate attributeName="opacity"
+        values="0;0.9;0.5;0.9;0.5" dur="1s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    
+
+    <!-- pct text -->
+    <text x="587" y="74"
+      font-family="monospace" font-size="10" fill="#b8d8b8"
+      text-anchor="start"
+    >45%</text>
+  </g>
+  <!-- ── Security+ ── -->
+  <g>
+    <!-- label -->
+    <text x="20" y="95"
+      font-family="monospace" font-size="11" font-weight="bold" fill="#39FF14"
+    >Security+</text>
+
+    <!-- badge -->
+    <rect x="76" y="84" width="62" height="14"
+      fill="#1a1a00" rx="2"/>
+    <text x="79" y="94"
+      font-family="monospace" font-size="9" fill="#FFE900"
+    >INCOMING</text>
+
+    <!-- full name -->
+    <text x="20" y="110"
+      font-family="monospace" font-size="9" fill="#3a6a3a"
+    >CompTIA Security+</text>
+
+    <!-- bar track -->
+    <rect x="88" y="112" width="494" height="8"
+      fill="#111a11" rx="2"/>
+    <rect x="88" y="112" width="494" height="8"
+      fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
+
+    <!-- bar fill (animated grow) -->
+    
+    <rect x="89" y="113" width="0" height="6"
+      fill="#39FF14" rx="1">
+      <animate attributeName="width"
+        from="0" to="98"
+        dur="3s" begin="0.4s" fill="freeze"/>
+    </rect>
+    
+    <rect x="185" y="113" width="2" height="6"
+      fill="#ffffff" opacity="0.8" rx="0">
+      <animate attributeName="x"
+        from="88" to="185"
+        dur="3s" begin="0.4s" fill="freeze"/>
+      <animate attributeName="opacity"
+        values="0;0.9;0.5;0.9;0.5" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    
+
+    <!-- pct text -->
+    <text x="587" y="120"
+      font-family="monospace" font-size="10" fill="#b8d8b8"
+      text-anchor="start"
+    >20%</text>
+  </g>
+  <!-- ── PNPT ── -->
+  <g>
+    <!-- label -->
+    <text x="20" y="141"
+      font-family="monospace" font-size="11" font-weight="bold" fill="#3a6a3a"
+    >PNPT</text>
+
+    <!-- badge -->
+    <rect x="76" y="130" width="48" height="14"
+      fill="#0a120a" rx="2"/>
+    <text x="79" y="140"
+      font-family="monospace" font-size="9" fill="#3a6a3a"
+    >queued</text>
+
+    <!-- full name -->
+    <text x="20" y="156"
+      font-family="monospace" font-size="9" fill="#3a6a3a"
+    >TCM Security — Practical Network PenTest</text>
+
+    <!-- bar track -->
+    <rect x="88" y="158" width="494" height="8"
+      fill="#111a11" rx="2"/>
+    <rect x="88" y="158" width="494" height="8"
+      fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
+
+    <!-- bar fill (animated grow) -->
+    
+    <text x="92" y="165"
+      font-family="monospace" font-size="8" fill="#3a6a3a"
+    >░░░░░░░░░░ not started</text>
+    
+
+    <!-- pct text -->
+    <text x="587" y="166"
+      font-family="monospace" font-size="10" fill="#3a6a3a"
+      text-anchor="start"
+    >0%</text>
+  </g>
+  <!-- ── OSCP ── -->
+  <g>
+    <!-- label -->
+    <text x="20" y="187"
+      font-family="monospace" font-size="11" font-weight="bold" fill="#FF00FF"
+    >OSCP</text>
+
+    <!-- badge -->
+    <rect x="76" y="176" width="62" height="14"
+      fill="#1a001a" rx="2"/>
+    <text x="79" y="186"
+      font-family="monospace" font-size="9" fill="#FF00FF"
+    >someday…</text>
+
+    <!-- full name -->
+    <text x="20" y="202"
+      font-family="monospace" font-size="9" fill="#3a6a3a"
+    >Offensive Security Certified Professional</text>
+
+    <!-- bar track -->
+    <rect x="88" y="204" width="494" height="8"
+      fill="#111a11" rx="2"/>
+    <rect x="88" y="204" width="494" height="8"
+      fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
+
+    <!-- bar fill (animated grow) -->
+    
+    <text x="92" y="211"
+      font-family="monospace" font-size="8" fill="#3a6a3a"
+    >░░░░░░░░░░ not started</text>
+    
+
+    <!-- pct text -->
+    <text x="587" y="212"
+      font-family="monospace" font-size="10" fill="#3a6a3a"
+      text-anchor="start"
+    >0%</text>
+  </g>
+    </g>
+
+    <!-- scanlines -->
+    <rect width="640" height="228" fill="url(#sl2)" opacity="0.7"/>
+
+    <!-- outer border -->
+    <rect width="639" height="227" x="0.5" y="0.5"
+      fill="none" stroke="#1c3a1c" stroke-width="1" rx="6"/>
+  </g>
+</svg>
