@@ -4,12 +4,6 @@
 
 <img src="terminal.svg" width="640" alt="intrusion terminal · root@yami02" />
 
-```
-root@yami02:~# whoami
-uid=0(yami02)  gid=1337(elite)  loc=BH/MG/BR  mode=OFFENSIVE
-「敵を知り、己を知れば、百戦危うからず」— 孫子
-```
-
 </div>
 
 ---
@@ -25,15 +19,6 @@ uid=0(yami02)  gid=1337(elite)  loc=BH/MG/BR  mode=OFFENSIVE
 ![Void](https://img.shields.io/badge/Void_Linux-0a0f0a?style=flat-square&logo=voidlinux&logoColor=39FF14)
 
 `Nmap` `Metasploit` `Burp Suite` `IDA Pro` `GDB/pwndbg` `Hashcat` `OSINT` `HTB` `pwn.college`
-
----
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=yami02&show_icons=true&hide_border=true&bg_color=0a0f0a&title_color=39FF14&text_color=c8e8c8&icon_color=FF00FF&include_all_commits=true&count_private=true" height="140" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yami02&layout=compact&hide_border=true&bg_color=0a0f0a&title_color=39FF14&text_color=c8e8c8" height="140" />
-
-</div>
 
 ---
 

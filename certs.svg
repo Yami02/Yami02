@@ -1,213 +1,149 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="228" viewBox="0 0 640 228">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="238" viewBox="0 0 640 238">
   <defs>
-    <clipPath id="cf"><rect width="640" height="228" rx="6"/></clipPath>
-    <filter id="gf" x="-5%" y="-5%" width="110%" height="110%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="0.8" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <pattern id="sl2" x="0" y="0" width="640" height="3" patternUnits="userSpaceOnUse">
-      <rect width="640" height="1" y="1" fill="rgba(0,0,0,0.08)"/>
+      <rect width="640" height="1" y="1" fill="rgba(0,0,0,0.09)"/>
     </pattern>
   </defs>
-  <g clip-path="url(#cf)">
-    <rect width="640" height="228" fill="#050a05"/>
 
-    <!-- chrome -->
-    <rect width="640" height="28" fill="#0d1a0d"/>
-    <rect y="27" width="640" height="1" fill="#1c3a1c"/>
-    <circle cx="14" cy="14" r="4" fill="#ff5f56"/>
-    <circle cx="28" cy="14" r="4" fill="#ffbd2e"/>
-    <circle cx="42" cy="14" r="4" fill="#27c93f"/>
-    <text x="320" y="18" text-anchor="middle"
-      font-family="monospace" font-size="10" fill="#3a6a3a"
-    >⛏  root@yami02:~# cat certs/roadmap.txt</text>
+  <!-- bg -->
+  <rect width="640" height="238" fill="#050a05" rx="6"/>
 
-    <!-- rows -->
-    <g filter="url(#gf)">
-      
+  <!-- chrome -->
+  <rect width="640" height="28" fill="#0d1a0d" rx="6"/>
+  <rect width="640" height="22" y="6" fill="#0d1a0d"/>
+  <rect y="27" width="640" height="1" fill="#1c3a1c"/>
+  <circle cx="14" cy="14" r="4" fill="#ff5f56"/>
+  <circle cx="28" cy="14" r="4" fill="#ffbd2e"/>
+  <circle cx="42" cy="14" r="4" fill="#27c93f"/>
+  <text x="320" y="18" text-anchor="middle"
+    font-family="monospace" font-size="10" fill="#3a6a3a"
+  >root@yami02:~# cat certs/roadmap.txt</text>
+
+  <!-- miner sprite -->
+  <rect x="16" y="34" width="4" height="4" fill="#3a3a8a"/><rect x="20" y="34" width="4" height="4" fill="#3a3a8a"/><rect x="24" y="34" width="4" height="4" fill="#3a3a8a"/><rect x="12" y="38" width="4" height="4" fill="#3a3a8a"/><rect x="16" y="38" width="4" height="4" fill="#3a3a8a"/><rect x="20" y="38" width="4" height="4" fill="#3a3a8a"/><rect x="24" y="38" width="4" height="4" fill="#3a3a8a"/><rect x="28" y="38" width="4" height="4" fill="#3a3a8a"/><rect x="12" y="42" width="4" height="4" fill="#3a3a8a"/><rect x="16" y="42" width="4" height="4" fill="#f5c18a"/><rect x="20" y="42" width="4" height="4" fill="#f5c18a"/><rect x="24" y="42" width="4" height="4" fill="#f5c18a"/><rect x="28" y="42" width="4" height="4" fill="#3a3a8a"/><rect x="12" y="46" width="4" height="4" fill="#3a3a8a"/><rect x="16" y="46" width="4" height="4" fill="#f5c18a"/><rect x="20" y="46" width="4" height="4" fill="#cc5500"/><rect x="24" y="46" width="4" height="4" fill="#f5c18a"/><rect x="28" y="46" width="4" height="4" fill="#3a3a8a"/><rect x="16" y="50" width="4" height="4" fill="#3a3a8a"/><rect x="20" y="50" width="4" height="4" fill="#f5c18a"/><rect x="24" y="50" width="4" height="4" fill="#f5c18a"/><rect x="28" y="50" width="4" height="4" fill="#3a3a8a"/><rect x="16" y="54" width="4" height="4" fill="#4a2a0a"/><rect x="20" y="54" width="4" height="4" fill="#4a2a0a"/><rect x="24" y="54" width="4" height="4" fill="#4a2a0a"/><rect x="28" y="54" width="4" height="4" fill="#4a2a0a"/><rect x="32" y="54" width="4" height="4" fill="#4a2a0a"/><rect x="12" y="58" width="4" height="4" fill="#4a2a0a"/><rect x="16" y="58" width="4" height="4" fill="#4a2a0a"/><rect x="20" y="58" width="4" height="4" fill="#4a2a0a"/><rect x="24" y="58" width="4" height="4" fill="#4a2a0a"/><rect x="28" y="58" width="4" height="4" fill="#4a2a0a"/><rect x="32" y="58" width="4" height="4" fill="#4a2a0a"/><rect x="36" y="58" width="4" height="4" fill="#4a2a0a"/><rect x="12" y="62" width="4" height="4" fill="#4a2a0a"/><rect x="16" y="62" width="4" height="4" fill="#4a2a0a"/><rect x="24" y="62" width="4" height="4" fill="#4a2a0a"/><rect x="32" y="62" width="4" height="4" fill="#4a2a0a"/><rect x="36" y="62" width="4" height="4" fill="#4a2a0a"/><rect x="16" y="66" width="4" height="4" fill="#4a2a0a"/><rect x="32" y="66" width="4" height="4" fill="#4a2a0a"/><rect x="16" y="70" width="4" height="4" fill="#4a2a0a"/><rect x="32" y="70" width="4" height="4" fill="#4a2a0a"/><rect x="12" y="74" width="4" height="4" fill="#4a2a0a"/><rect x="16" y="74" width="4" height="4" fill="#4a2a0a"/><rect x="32" y="74" width="4" height="4" fill="#4a2a0a"/><rect x="36" y="74" width="4" height="4" fill="#4a2a0a"/><rect x="12" y="78" width="4" height="4" fill="#4a2a0a"/><rect x="16" y="78" width="4" height="4" fill="#4a2a0a"/><rect x="32" y="78" width="4" height="4" fill="#4a2a0a"/><rect x="36" y="78" width="4" height="4" fill="#4a2a0a"/><rect x="12" y="82" width="4" height="4" fill="#e8e0d0"/><rect x="16" y="82" width="4" height="4" fill="#e8e0d0"/><rect x="32" y="82" width="4" height="4" fill="#e8e0d0"/><rect x="36" y="82" width="4" height="4" fill="#e8e0d0"/><rect x="12" y="86" width="4" height="4" fill="#e8e0d0"/><rect x="16" y="86" width="4" height="4" fill="#e8e0d0"/><rect x="32" y="86" width="4" height="4" fill="#e8e0d0"/><rect x="36" y="86" width="4" height="4" fill="#e8e0d0"/>
+  
+  <!-- pickaxe frame 0: up -->
+  <g opacity="0"><rect x="40" y="58" width="4" height="4" fill="#8B4513"/><rect x="44" y="56" width="4" height="4" fill="#8B4513"/><rect x="47" y="54" width="4" height="4" fill="#8B4513"/><rect x="51" y="52" width="4" height="4" fill="#8B4513"/><rect x="54" y="50" width="4" height="4" fill="#8B4513"/><rect x="54" y="41" width="4" height="4" fill="#aaaaaa"/><rect x="56" y="44" width="4" height="4" fill="#aaaaaa"/><rect x="58" y="48" width="4" height="4" fill="#aaaaaa"/><rect x="60" y="52" width="4" height="4" fill="#aaaaaa"/><rect x="62" y="55" width="4" height="4" fill="#aaaaaa"/><animate attributeName="opacity" dur="0.75s" repeatCount="indefinite"
+    keyTimes="0;0.001;0.333;0.334;1" values="1;1;1;0;0"/></g>
+  <!-- pickaxe frame 1: mid -->
+  <g opacity="0"><rect x="40" y="58" width="4" height="4" fill="#8B4513"/><rect x="44" y="58" width="4" height="4" fill="#8B4513"/><rect x="48" y="59" width="4" height="4" fill="#8B4513"/><rect x="52" y="59" width="4" height="4" fill="#8B4513"/><rect x="56" y="60" width="4" height="4" fill="#8B4513"/><rect x="61" y="52" width="4" height="4" fill="#aaaaaa"/><rect x="60" y="56" width="4" height="4" fill="#aaaaaa"/><rect x="60" y="60" width="4" height="4" fill="#aaaaaa"/><rect x="60" y="64" width="4" height="4" fill="#aaaaaa"/><rect x="59" y="68" width="4" height="4" fill="#aaaaaa"/><animate attributeName="opacity" dur="0.75s" repeatCount="indefinite"
+    keyTimes="0;0.332;0.333;0.666;0.667;1" values="0;0;1;1;0;0"/></g>
+  <!-- pickaxe frame 2: down/strike -->
+  <g opacity="0"><rect x="40" y="58" width="4" height="4" fill="#8B4513"/><rect x="43" y="61" width="4" height="4" fill="#8B4513"/><rect x="46" y="63" width="4" height="4" fill="#8B4513"/><rect x="49" y="66" width="4" height="4" fill="#8B4513"/><rect x="52" y="68" width="4" height="4" fill="#8B4513"/><rect x="60" y="65" width="4" height="4" fill="#aaaaaa"/><rect x="58" y="68" width="4" height="4" fill="#aaaaaa"/><rect x="55" y="71" width="4" height="4" fill="#aaaaaa"/><rect x="52" y="74" width="4" height="4" fill="#aaaaaa"/><rect x="50" y="77" width="4" height="4" fill="#aaaaaa"/><animate attributeName="opacity" dur="0.75s" repeatCount="indefinite"
+    keyTimes="0;0.665;0.666;0.999;1;1" values="0;0;1;1;0;0"/></g>
+  <!-- spark on strike -->
+  <g opacity="0">
+    <rect x="56" y="74" width="2" height="2" fill="#FFE900"/>
+    <rect x="60" y="70" width="2" height="2" fill="#39FF14"/>
+    <rect x="52" y="78" width="2" height="2" fill="#FFE900"/>
+    <animate attributeName="opacity" dur="0.75s" repeatCount="indefinite"
+      keyTimes="0;0.665;0.666;0.75;0.751;1" values="0;0;1;1;0;0"/>
+  </g>
+
+  <!-- divider between miner and rows -->
+  <rect x="76" y="32" width="1" height="202" fill="#1c3a1c"/>
+
+  <!-- cert rows -->
+  
   <!-- ── eJPT ── -->
-  <g>
-    <!-- label -->
-    <text x="20" y="49"
-      font-family="monospace" font-size="11" font-weight="bold" fill="#39FF14"
-    >eJPT</text>
-
-    <!-- badge -->
-    <rect x="76" y="38" width="62" height="14"
-      fill="#1a1a00" rx="2"/>
-    <text x="79" y="48"
-      font-family="monospace" font-size="9" fill="#FFE900"
-    >INCOMING</text>
-
-    <!-- full name -->
-    <text x="20" y="64"
-      font-family="monospace" font-size="9" fill="#3a6a3a"
-    >eLearnSecurity Junior PenTester</text>
-
-    <!-- bar track -->
-    <rect x="88" y="66" width="494" height="8"
-      fill="#111a11" rx="2"/>
-    <rect x="88" y="66" width="494" height="8"
-      fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
-
-    <!-- bar fill (animated grow) -->
-    
-    <rect x="89" y="67" width="0" height="6"
-      fill="#39FF14" rx="1">
-      <animate attributeName="width"
-        from="0" to="221"
-        dur="3s" begin="0s" fill="freeze"/>
-    </rect>
-    
-    <rect x="308" y="67" width="2" height="6"
-      fill="#ffffff" opacity="0.8" rx="0">
-      <animate attributeName="x"
-        from="88" to="308"
-        dur="3s" begin="0s" fill="freeze"/>
-      <animate attributeName="opacity"
-        values="0;0.9;0.5;0.9;0.5" dur="1s" begin="0s" repeatCount="indefinite"/>
-    </rect>
-    
-
-    <!-- pct text -->
-    <text x="587" y="74"
-      font-family="monospace" font-size="10" fill="#b8d8b8"
-      text-anchor="start"
-    >45%</text>
-  </g>
+  <text x="84" y="49"
+    font-family="monospace" font-size="11" font-weight="bold" fill="#39FF14"
+  >eJPT</text>
+  <rect x="146" y="38" width="54" height="13"
+    fill="#1c1c00" rx="2"/>
+  <text x="149" y="48"
+    font-family="monospace" font-size="8" fill="#FFE900"
+  >INCOMING</text>
+  <text x="84" y="62"
+    font-family="monospace" font-size="8" fill="#3a6a3a"
+  >eLearnSecurity Junior PenTester</text>
+  <rect x="84" y="66" width="506" height="8" fill="#111a11" rx="2"/>
+  <rect x="84" y="66" width="506" height="8"
+    fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
+  
+  <rect x="85" y="67" width="0" height="6" fill="#39FF14" rx="1">
+    <animate attributeName="width" from="0" to="227"
+      dur="1.5s" begin="0s" fill="freeze"/>
+  </rect>
+  <rect x="310" y="67" width="2" height="6" fill="#ffffff">
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="0.8s" repeatCount="indefinite"/>
+  </rect>
+  <text x="595" y="74"
+    font-family="monospace" font-size="9" fill="#b8d8b8"
+  >45%</text>
   <!-- ── Security+ ── -->
-  <g>
-    <!-- label -->
-    <text x="20" y="95"
-      font-family="monospace" font-size="11" font-weight="bold" fill="#39FF14"
-    >Security+</text>
-
-    <!-- badge -->
-    <rect x="76" y="84" width="62" height="14"
-      fill="#1a1a00" rx="2"/>
-    <text x="79" y="94"
-      font-family="monospace" font-size="9" fill="#FFE900"
-    >INCOMING</text>
-
-    <!-- full name -->
-    <text x="20" y="110"
-      font-family="monospace" font-size="9" fill="#3a6a3a"
-    >CompTIA Security+</text>
-
-    <!-- bar track -->
-    <rect x="88" y="112" width="494" height="8"
-      fill="#111a11" rx="2"/>
-    <rect x="88" y="112" width="494" height="8"
-      fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
-
-    <!-- bar fill (animated grow) -->
-    
-    <rect x="89" y="113" width="0" height="6"
-      fill="#39FF14" rx="1">
-      <animate attributeName="width"
-        from="0" to="98"
-        dur="3s" begin="0.4s" fill="freeze"/>
-    </rect>
-    
-    <rect x="185" y="113" width="2" height="6"
-      fill="#ffffff" opacity="0.8" rx="0">
-      <animate attributeName="x"
-        from="88" to="185"
-        dur="3s" begin="0.4s" fill="freeze"/>
-      <animate attributeName="opacity"
-        values="0;0.9;0.5;0.9;0.5" dur="1s" begin="0.4s" repeatCount="indefinite"/>
-    </rect>
-    
-
-    <!-- pct text -->
-    <text x="587" y="120"
-      font-family="monospace" font-size="10" fill="#b8d8b8"
-      text-anchor="start"
-    >20%</text>
-  </g>
+  <text x="84" y="97"
+    font-family="monospace" font-size="11" font-weight="bold" fill="#39FF14"
+  >Security+</text>
+  <rect x="146" y="86" width="54" height="13"
+    fill="#1c1c00" rx="2"/>
+  <text x="149" y="96"
+    font-family="monospace" font-size="8" fill="#FFE900"
+  >INCOMING</text>
+  <text x="84" y="110"
+    font-family="monospace" font-size="8" fill="#3a6a3a"
+  >CompTIA Security+</text>
+  <rect x="84" y="114" width="506" height="8" fill="#111a11" rx="2"/>
+  <rect x="84" y="114" width="506" height="8"
+    fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
+  
+  <rect x="85" y="115" width="0" height="6" fill="#39FF14" rx="1">
+    <animate attributeName="width" from="0" to="100"
+      dur="1.5s" begin="0.5s" fill="freeze"/>
+  </rect>
+  <rect x="183" y="115" width="2" height="6" fill="#ffffff">
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="0.8s" repeatCount="indefinite"/>
+  </rect>
+  <text x="595" y="122"
+    font-family="monospace" font-size="9" fill="#b8d8b8"
+  >20%</text>
   <!-- ── PNPT ── -->
-  <g>
-    <!-- label -->
-    <text x="20" y="141"
-      font-family="monospace" font-size="11" font-weight="bold" fill="#3a6a3a"
-    >PNPT</text>
-
-    <!-- badge -->
-    <rect x="76" y="130" width="48" height="14"
-      fill="#0a120a" rx="2"/>
-    <text x="79" y="140"
-      font-family="monospace" font-size="9" fill="#3a6a3a"
-    >queued</text>
-
-    <!-- full name -->
-    <text x="20" y="156"
-      font-family="monospace" font-size="9" fill="#3a6a3a"
-    >TCM Security — Practical Network PenTest</text>
-
-    <!-- bar track -->
-    <rect x="88" y="158" width="494" height="8"
-      fill="#111a11" rx="2"/>
-    <rect x="88" y="158" width="494" height="8"
-      fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
-
-    <!-- bar fill (animated grow) -->
-    
-    <text x="92" y="165"
-      font-family="monospace" font-size="8" fill="#3a6a3a"
-    >░░░░░░░░░░ not started</text>
-    
-
-    <!-- pct text -->
-    <text x="587" y="166"
-      font-family="monospace" font-size="10" fill="#3a6a3a"
-      text-anchor="start"
-    >0%</text>
-  </g>
+  <text x="84" y="145"
+    font-family="monospace" font-size="11" font-weight="bold" fill="#3a6a3a"
+  >PNPT</text>
+  <rect x="146" y="134" width="42" height="13"
+    fill="#0a120a" rx="2"/>
+  <text x="149" y="144"
+    font-family="monospace" font-size="8" fill="#3a6a3a"
+  >queued</text>
+  <text x="84" y="158"
+    font-family="monospace" font-size="8" fill="#3a6a3a"
+  >TCM Security — Practical Network PenTest</text>
+  <rect x="84" y="162" width="506" height="8" fill="#111a11" rx="2"/>
+  <rect x="84" y="162" width="506" height="8"
+    fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
+  
+  <text x="88" y="169" font-family="monospace" font-size="7" fill="#3a6a3a"
+  >not started</text>
+  <text x="595" y="170"
+    font-family="monospace" font-size="9" fill="#3a6a3a"
+  >0%</text>
   <!-- ── OSCP ── -->
-  <g>
-    <!-- label -->
-    <text x="20" y="187"
-      font-family="monospace" font-size="11" font-weight="bold" fill="#FF00FF"
-    >OSCP</text>
+  <text x="84" y="193"
+    font-family="monospace" font-size="11" font-weight="bold" fill="#FF00FF"
+  >OSCP</text>
+  <rect x="146" y="182" width="66" height="13"
+    fill="#1c001c" rx="2"/>
+  <text x="149" y="192"
+    font-family="monospace" font-size="8" fill="#FF00FF"
+  >someday...</text>
+  <text x="84" y="206"
+    font-family="monospace" font-size="8" fill="#3a6a3a"
+  >Offensive Security Certified Professional</text>
+  <rect x="84" y="210" width="506" height="8" fill="#111a11" rx="2"/>
+  <rect x="84" y="210" width="506" height="8"
+    fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
+  
+  <text x="88" y="217" font-family="monospace" font-size="7" fill="#3a6a3a"
+  >not started</text>
+  <text x="595" y="218"
+    font-family="monospace" font-size="9" fill="#3a6a3a"
+  >0%</text>
 
-    <!-- badge -->
-    <rect x="76" y="176" width="62" height="14"
-      fill="#1a001a" rx="2"/>
-    <text x="79" y="186"
-      font-family="monospace" font-size="9" fill="#FF00FF"
-    >someday…</text>
+  <!-- scanlines -->
+  <rect width="640" height="238" fill="url(#sl2)" opacity="0.6"/>
 
-    <!-- full name -->
-    <text x="20" y="202"
-      font-family="monospace" font-size="9" fill="#3a6a3a"
-    >Offensive Security Certified Professional</text>
-
-    <!-- bar track -->
-    <rect x="88" y="204" width="494" height="8"
-      fill="#111a11" rx="2"/>
-    <rect x="88" y="204" width="494" height="8"
-      fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
-
-    <!-- bar fill (animated grow) -->
-    
-    <text x="92" y="211"
-      font-family="monospace" font-size="8" fill="#3a6a3a"
-    >░░░░░░░░░░ not started</text>
-    
-
-    <!-- pct text -->
-    <text x="587" y="212"
-      font-family="monospace" font-size="10" fill="#3a6a3a"
-      text-anchor="start"
-    >0%</text>
-  </g>
-    </g>
-
-    <!-- scanlines -->
-    <rect width="640" height="228" fill="url(#sl2)" opacity="0.7"/>
-
-    <!-- outer border -->
-    <rect width="639" height="227" x="0.5" y="0.5"
-      fill="none" stroke="#1c3a1c" stroke-width="1" rx="6"/>
-  </g>
+  <!-- border -->
+  <rect width="639" height="237" x="0.5" y="0.5"
+    fill="none" stroke="#1c3a1c" stroke-width="1" rx="6"/>
 </svg>
