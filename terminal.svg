@@ -127,7 +127,7 @@
       dur="19.49s" repeatCount="indefinite"/></text>
   <text id="e10" x="22" y="225"
     font-family="monospace" font-size="13" fill="#FFE900" opacity="0"
-  >[!] alvo provavel vulneravel a MS17-010 (EternalBlue)<animate attributeName="opacity"
+  >[!] target likely vulnerable to MS17-010 (EternalBlue)<animate attributeName="opacity"
       values="0;0;1;1;0;0"
       keyTimes="0.00000;0.27014;0.27014;0.96921;0.96921;1"
       dur="19.49s" repeatCount="indefinite"/></text>
@@ -213,19 +213,19 @@
   </rect>
   <text id="e17" x="22" y="337"
     font-family="monospace" font-size="13" fill="#39FF14" opacity="0"
-  >[+] alvo VULNERAVEL — Windows 7 SP1 x64<animate attributeName="opacity"
+  >[+] target VULNERABLE — Windows 7 SP1 x64<animate attributeName="opacity"
       values="0;0;1;1;0;0"
       keyTimes="0.00000;0.75500;0.75500;0.96921;0.96921;1"
       dur="19.49s" repeatCount="indefinite"/></text>
   <text id="e18" x="22" y="357"
     font-family="monospace" font-size="13" fill="#00FFFF" opacity="0"
-  >[*] corrompendo pool nao-paginado... enviando payload<animate attributeName="opacity"
+  >[*] corrupting non-paged pool... sending payload<animate attributeName="opacity"
       values="0;0;1;1;0;0"
       keyTimes="0.00000;0.76167;0.76167;0.96921;0.96921;1"
       dur="19.49s" repeatCount="indefinite"/></text>
   <text id="e19" x="22" y="377"
     font-family="monospace" font-size="13" fill="#39FF14" opacity="0"
-  >[+] sessao meterpreter aberta -&gt; nt authority\system<animate attributeName="opacity"
+  >[+] meterpreter session opened -&gt; nt authority\system<animate attributeName="opacity"
       values="0;0;1;1;0;0"
       keyTimes="0.00000;0.76834;0.76834;0.96921;0.96921;1"
       dur="19.49s" repeatCount="indefinite"/></text>
@@ -265,7 +265,7 @@
   </rect>
   <text id="e22" x="22" y="423"
     font-family="monospace" font-size="13" fill="#39FF14" opacity="0"
-  >[+] flag{um_d1a_4pos_0_0utr0_t3nt4nd0}<animate attributeName="opacity"
+  >[+] flag{d4y_4ft3r_d4y_st1ll_try1ng}<animate attributeName="opacity"
       values="0;0;1;1;0;0"
       keyTimes="0.00000;0.90354;0.90354;0.96921;0.96921;1"
       dur="19.49s" repeatCount="indefinite"/></text>
