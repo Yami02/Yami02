@@ -83,8 +83,9 @@ function esc(s) {
   return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-function pct(t, total) {
-  return ((t / total) * 100).toFixed(4) + '%';
+// keyTimes for SMIL <animate> must be 0..1 decimals (NOT percentages)
+function kt(t, total) {
+  return Math.min(1, t / total).toFixed(5);
 }
 
 // ── Build flat timeline ────────────────────────────────────────────────────
@@ -131,10 +132,10 @@ function generateSVG() {
 
   events.forEach((ev, i) => {
     const id   = `e${i}`;
-    const p0   = pct(0,       totalDur);
-    const pOn  = pct(ev.t,    totalDur);
-    const pH   = pct(HIDE,    totalDur);
-    const p1   = '100%';
+    const k0   = kt(0,       totalDur);
+    const kOn  = kt(ev.t,    totalDur);
+    const kH   = kt(HIDE,    totalDur);
+    const k1   = '1';
 
     if (ev.kind === 'prompt') {
       els += `
@@ -142,12 +143,12 @@ function generateSVG() {
     font-family="monospace" font-size="${FONT_PX}" fill="${C.green}" opacity="0"
   >${esc(PROMPT)}<animate attributeName="opacity"
       values="0;0;1;1;0;0"
-      keyTimes="${p0};${pOn};${pOn};${pH};${pH};${p1}"
+      keyTimes="${k0};${kOn};${kOn};${kH};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/></text>`;
 
     } else if (ev.kind === 'mask') {
       const endT = ev.t + ev.maskDur;
-      const pEnd = pct(endT, totalDur);
+      const kEnd = kt(endT, totalDur);
 
       // Actual command text
       els += `
@@ -155,7 +156,7 @@ function generateSVG() {
     font-family="monospace" font-size="${FONT_PX}" fill="${C.white}" opacity="0"
   >${esc(ev.text)}<animate attributeName="opacity"
       values="0;0;1;1;0;0"
-      keyTimes="${p0};${pOn};${pOn};${pH};${pH};${p1}"
+      keyTimes="${k0};${kOn};${kOn};${kH};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/></text>`;
 
       // Sliding mask rect (right-to-left reveal)
@@ -163,24 +164,24 @@ function generateSVG() {
   <rect id="${id}-m" x="${ev.cmdX}" y="${ev.y - FONT_PX - 2}"
     width="${ev.maskW}" height="${FONT_PX + 4}" fill="${C.bg}" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0"
-      keyTimes="${p0};${pOn};${pOn};${pH};${pH};${p1}"
+      keyTimes="${k0};${kOn};${kOn};${kH};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/>
     <animate attributeName="width" values="${ev.maskW};${ev.maskW};0;0;${ev.maskW}"
-      keyTimes="${p0};${pOn};${pEnd};${pH};${p1}"
+      keyTimes="${k0};${kOn};${kEnd};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/>
   </rect>`;
 
-      // Typing cursor (blinks a few times, then disappears when output shows)
-      const c0 = pct(ev.t + 0.1, totalDur);
-      const c1 = pct(ev.t + 0.3, totalDur);
-      const c2 = pct(ev.t + 0.5, totalDur);
-      const c3 = pct(ev.t + 0.7, totalDur);
+      // Typing cursor
+      const kc0 = kt(ev.t + 0.1, totalDur);
+      const kc1 = kt(ev.t + 0.3, totalDur);
+      const kc2 = kt(ev.t + 0.5, totalDur);
+      const kc3 = kt(ev.t + 0.7, totalDur);
       els += `
   <rect id="${id}-cur" x="${ev.cmdX}" y="${ev.y - FONT_PX + 1}"
     width="7" height="${FONT_PX + 1}" fill="${C.green}" opacity="0">
     <animate attributeName="opacity"
       values="0;0;1;0;1;0;1;0;0;0"
-      keyTimes="${p0};${pOn};${c0};${c1};${c2};${c3};${pEnd};${pEnd};${pH};${p1}"
+      keyTimes="${k0};${kOn};${kc0};${kc1};${kc2};${kc3};${kEnd};${kEnd};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/>
   </rect>`;
 
@@ -190,7 +191,7 @@ function generateSVG() {
     font-family="monospace" font-size="${FONT_PX}" fill="${ev.color}" opacity="0"
   >${esc(ev.text)}<animate attributeName="opacity"
       values="0;0;1;1;0;0"
-      keyTimes="${p0};${pOn};${pOn};${pH};${pH};${p1}"
+      keyTimes="${k0};${kOn};${kOn};${kH};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/></text>`;
     }
   });
