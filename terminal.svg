@@ -34,7 +34,7 @@
       keyTimes="0.00000;0.01730;0.01730;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/></text>
   <rect id="e1-m" x="135.6" y="44"
-    width="52" height="17" fill="#050a05" opacity="0">
+    width="52" height="23" fill="#050a05" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0"
       keyTimes="0.00000;0.01730;0.01730;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
@@ -51,8 +51,8 @@
       keyTimes="0.00000;0.01730;0.04843;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="opacity"
-      values="0;1;1;0;1;0;0;0"
-      keyTimes="0.00000;0.01730;0.04843;0.05719;0.06595;0.07471;0.95849;1"
+      values="0;0;1;1;0;1;0;0;0"
+      keyTimes="0.00000;0.01730;0.01730;0.04843;0.05719;0.06595;0.07471;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <text id="e2" x="22" y="79"
@@ -92,7 +92,7 @@
       keyTimes="0.00000;0.19025;0.19025;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/></text>
   <rect id="e7-m" x="135.6" y="150"
-    width="193" height="17" fill="#050a05" opacity="0">
+    width="193" height="23" fill="#050a05" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0"
       keyTimes="0.00000;0.19025;0.19025;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
@@ -109,8 +109,8 @@
       keyTimes="0.00000;0.19025;0.31477;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="opacity"
-      values="0;1;1;0;1;0;0;0"
-      keyTimes="0.00000;0.19025;0.31477;0.32353;0.33230;0.34106;0.95849;1"
+      values="0;0;1;1;0;1;0;0;0"
+      keyTimes="0.00000;0.19025;0.19025;0.31477;0.32353;0.33230;0.34106;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <text id="e8" x="22" y="185"
@@ -150,7 +150,7 @@
       keyTimes="0.00000;0.45659;0.45659;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/></text>
   <rect id="e13-m" x="135.6" y="256"
-    width="287" height="17" fill="#050a05" opacity="0">
+    width="287" height="23" fill="#050a05" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0"
       keyTimes="0.00000;0.45659;0.45659;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
@@ -167,8 +167,8 @@
       keyTimes="0.00000;0.45659;0.64338;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="opacity"
-      values="0;1;1;0;1;0;0;0"
-      keyTimes="0.00000;0.45659;0.64338;0.65214;0.66090;0.66966;0.95849;1"
+      values="0;0;1;1;0;1;0;0;0"
+      keyTimes="0.00000;0.45659;0.45659;0.64338;0.65214;0.66090;0.66966;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <text id="e14" x="22" y="291"
@@ -202,7 +202,7 @@
       keyTimes="0.00000;0.77620;0.77620;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/></text>
   <rect id="e18-m" x="135.6" y="342"
-    width="106" height="17" fill="#050a05" opacity="0">
+    width="106" height="23" fill="#050a05" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0"
       keyTimes="0.00000;0.77620;0.77620;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
@@ -219,8 +219,8 @@
       keyTimes="0.00000;0.77620;0.84365;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="opacity"
-      values="0;1;1;0;1;0;0;0"
-      keyTimes="0.00000;0.77620;0.84365;0.85242;0.86118;0.86994;0.95849;1"
+      values="0;0;1;1;0;1;0;0;0"
+      keyTimes="0.00000;0.77620;0.77620;0.84365;0.85242;0.86118;0.86994;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <text id="e19" x="22" y="377"

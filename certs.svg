@@ -126,7 +126,7 @@
   >someday...</text>
   <text x="84" y="158"
     font-family="monospace" font-size="8" fill="#3a6a3a"
-  >Practical Malware Analysis & Triage — TCM Security</text>
+  >Practical Malware Analysis &amp; Triage — TCM Security</text>
   <rect x="84" y="162" width="506" height="8" fill="#111a11" rx="2"/>
   <rect x="84" y="162" width="506" height="8"
     fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>

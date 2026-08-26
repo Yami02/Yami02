@@ -164,7 +164,7 @@ function generateSVG() {
       // uncovered in reading order like real typing)
       els += `
   <rect id="${id}-m" x="${ev.cmdX}" y="${ev.y - FONT_PX - 2}"
-    width="${ev.maskW}" height="${FONT_PX + 4}" fill="${C.bg}" opacity="0">
+    width="${ev.maskW}" height="${FONT_PX + 10}" fill="${C.bg}" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0"
       keyTimes="${k0};${kOn};${kOn};${kH};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/>
@@ -193,8 +193,8 @@ function generateSVG() {
       keyTimes="${k0};${kOn};${kEnd};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/>
     <animate attributeName="opacity"
-      values="0;1;1;0;1;0;0;0"
-      keyTimes="${k0};${kOn};${kEnd};${kBlink1};${kBlink2};${kPauseEnd};${kH};${k1}"
+      values="0;0;1;1;0;1;0;0;0"
+      keyTimes="${k0};${kOn};${kOn};${kEnd};${kBlink1};${kBlink2};${kPauseEnd};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/>
   </rect>`;
 
@@ -414,10 +414,10 @@ function generateCertsSVG() {
     const delay    = `${i * 0.5}s`;
 
     rows += `
-  <!-- ── ${cert.label} ── -->
+  <!-- ── ${esc(cert.label)} ── -->
   <text x="${PAD_X}" y="${ry + 11}"
     font-family="monospace" font-size="11" font-weight="bold" fill="${labelCol}"
-  >${cert.label}</text>
+  >${esc(cert.label)}</text>
   <rect x="${PAD_X + 62}" y="${ry}" width="${badge.length * 6 + 6}" height="13"
     fill="${isActive ? '#1c1c00' : isDream ? '#1c001c' : '#0a120a'}" rx="2"/>
   <text x="${PAD_X + 65}" y="${ry + 10}"
@@ -425,7 +425,7 @@ function generateCertsSVG() {
   >${badge}</text>
   <text x="${PAD_X}" y="${ry + 24}"
     font-family="monospace" font-size="8" fill="${DIM}"
-  >${cert.full}</text>
+  >${esc(cert.full)}</text>
   <rect x="${PAD_X}" y="${ry + 28}" width="${BAR_W}" height="${BAR_H}" fill="${TRACK}" rx="2"/>
   <rect x="${PAD_X}" y="${ry + 28}" width="${BAR_W}" height="${BAR_H}"
     fill="none" stroke="${BORD}" stroke-width="0.5" rx="2"/>
