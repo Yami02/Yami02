@@ -45,10 +45,10 @@
 
   <!-- cert rows -->
   
-  <!-- ── eJPT ── -->
+  <!-- ── CTPS ── -->
   <text x="84" y="49"
     font-family="monospace" font-size="11" font-weight="bold" fill="#39FF14"
-  >eJPT</text>
+  >CTPS</text>
   <rect x="146" y="38" width="54" height="13"
     fill="#1c1c00" rx="2"/>
   <text x="149" y="48"
@@ -56,7 +56,7 @@
   >INCOMING</text>
   <text x="84" y="62"
     font-family="monospace" font-size="8" fill="#3a6a3a"
-  >eLearnSecurity Junior PenTester</text>
+  >Hack The Box</text>
   <rect x="84" y="66" width="506" height="8" fill="#111a11" rx="2"/>
   <rect x="84" y="66" width="506" height="8"
     fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
@@ -70,7 +70,7 @@
   </rect>
   <text x="595" y="74"
     font-family="monospace" font-size="9" fill="#b8d8b8"
-  >45%</text>
+  >11%</text>
   <!-- ── Security+ ── -->
   <text x="84" y="97"
     font-family="monospace" font-size="11" font-weight="bold" fill="#39FF14"
@@ -79,7 +79,7 @@
     fill="#1c1c00" rx="2"/>
   <text x="149" y="96"
     font-family="monospace" font-size="8" fill="#FFE900"
-  >INCOMING</text>
+  >queued</text>
   <text x="84" y="110"
     font-family="monospace" font-size="8" fill="#3a6a3a"
   >CompTIA Security+</text>
@@ -96,27 +96,6 @@
   </rect>
   <text x="595" y="122"
     font-family="monospace" font-size="9" fill="#b8d8b8"
-  >20%</text>
-  <!-- ── PNPT ── -->
-  <text x="84" y="145"
-    font-family="monospace" font-size="11" font-weight="bold" fill="#3a6a3a"
-  >PNPT</text>
-  <rect x="146" y="134" width="42" height="13"
-    fill="#0a120a" rx="2"/>
-  <text x="149" y="144"
-    font-family="monospace" font-size="8" fill="#3a6a3a"
-  >queued</text>
-  <text x="84" y="158"
-    font-family="monospace" font-size="8" fill="#3a6a3a"
-  >TCM Security — Practical Network PenTest</text>
-  <rect x="84" y="162" width="506" height="8" fill="#111a11" rx="2"/>
-  <rect x="84" y="162" width="506" height="8"
-    fill="none" stroke="#1c3a1c" stroke-width="0.5" rx="2"/>
-  
-  <text x="88" y="169" font-family="monospace" font-size="7" fill="#3a6a3a"
-  >not started</text>
-  <text x="595" y="170"
-    font-family="monospace" font-size="9" fill="#3a6a3a"
   >0%</text>
   <!-- ── OSCP ── -->
   <text x="84" y="193"
