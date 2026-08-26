@@ -159,29 +159,42 @@ function generateSVG() {
       keyTimes="${k0};${kOn};${kOn};${kH};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/></text>`;
 
-      // Sliding mask rect (right-to-left reveal)
+      // Sliding mask rect — left-to-right reveal (right edge fixed at
+      // cmdX+maskW, left edge advances as typing progresses, so text is
+      // uncovered in reading order like real typing)
       els += `
   <rect id="${id}-m" x="${ev.cmdX}" y="${ev.y - FONT_PX - 2}"
     width="${ev.maskW}" height="${FONT_PX + 4}" fill="${C.bg}" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0"
       keyTimes="${k0};${kOn};${kOn};${kH};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/>
+    <animate attributeName="x" values="${ev.cmdX};${ev.cmdX};${ev.cmdX + ev.maskW};${ev.cmdX + ev.maskW};${ev.cmdX}"
+      keyTimes="${k0};${kOn};${kEnd};${kH};${k1}"
+      dur="${DUR}" repeatCount="indefinite"/>
     <animate attributeName="width" values="${ev.maskW};${ev.maskW};0;0;${ev.maskW}"
       keyTimes="${k0};${kOn};${kEnd};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/>
   </rect>`;
 
-      // Typing cursor
-      const kc0 = kt(ev.t + 0.1, totalDur);
-      const kc1 = kt(ev.t + 0.3, totalDur);
-      const kc2 = kt(ev.t + 0.5, totalDur);
-      const kc3 = kt(ev.t + 0.7, totalDur);
+      // Typing cursor — tracks the reveal edge while typing (same keyTimes
+      // as the mask, guaranteed monotonic), stays solid while characters
+      // are appearing, then does a quick double-blink during the fixed
+      // T_PAUSE window right after typing ends ("command submitted") before
+      // going dark. Blink offsets are fractions of T_PAUSE — a constant
+      // duration independent of command length — so they can never land
+      // past the pause regardless of how short the command is.
+      const kBlink1 = kt(endT + T_PAUSE / 3, totalDur);
+      const kBlink2 = kt(endT + T_PAUSE * 2 / 3, totalDur);
+      const kPauseEnd = kt(endT + T_PAUSE, totalDur);
       els += `
   <rect id="${id}-cur" x="${ev.cmdX}" y="${ev.y - FONT_PX + 1}"
     width="7" height="${FONT_PX + 1}" fill="${C.green}" opacity="0">
+    <animate attributeName="x" values="${ev.cmdX};${ev.cmdX};${ev.cmdX + ev.maskW};${ev.cmdX + ev.maskW};${ev.cmdX}"
+      keyTimes="${k0};${kOn};${kEnd};${kH};${k1}"
+      dur="${DUR}" repeatCount="indefinite"/>
     <animate attributeName="opacity"
-      values="0;0;1;0;1;0;1;0;0;0"
-      keyTimes="${k0};${kOn};${kc0};${kc1};${kc2};${kc3};${kEnd};${kEnd};${kH};${k1}"
+      values="0;1;1;0;1;0;0;0"
+      keyTimes="${k0};${kOn};${kEnd};${kBlink1};${kBlink2};${kPauseEnd};${kH};${k1}"
       dur="${DUR}" repeatCount="indefinite"/>
   </rect>`;
 
@@ -361,6 +374,29 @@ function generateCertsSVG() {
     <rect x="${AX + 3*S}" y="${AY + 5*S}" width="2" height="2" fill="${YEL}"/>
     <animate attributeName="opacity" dur="0.75s" repeatCount="indefinite"
       keyTimes="0;0.665;0.666;0.75;0.751;1" values="0;0;1;1;0;0"/>
+  </g>
+  <!-- dust/debris kicked up on strike (earthy chips flying outward from the impact) -->
+  <g opacity="0">
+    <rect x="${AX + 4*S}" y="${AY + 5*S}" width="2" height="2" fill="#5a4a3a">
+      <animate attributeName="x" dur="0.75s" repeatCount="indefinite"
+        keyTimes="0;0.666;1" values="${AX + 4*S};${AX + 4*S};${AX + 7*S}"/>
+      <animate attributeName="y" dur="0.75s" repeatCount="indefinite"
+        keyTimes="0;0.666;1" values="${AY + 5*S};${AY + 5*S};${AY + 2*S}"/>
+    </rect>
+    <rect x="${AX + 3*S}" y="${AY + 6*S}" width="2" height="2" fill="#3a2a1a">
+      <animate attributeName="x" dur="0.75s" repeatCount="indefinite"
+        keyTimes="0;0.666;1" values="${AX + 3*S};${AX + 3*S};${AX - S}"/>
+      <animate attributeName="y" dur="0.75s" repeatCount="indefinite"
+        keyTimes="0;0.666;1" values="${AY + 6*S};${AY + 6*S};${AY + 3*S}"/>
+    </rect>
+    <rect x="${AX + 5*S}" y="${AY + 6*S}" width="1" height="1" fill="#5a4a3a">
+      <animate attributeName="x" dur="0.75s" repeatCount="indefinite"
+        keyTimes="0;0.666;1" values="${AX + 5*S};${AX + 5*S};${AX + 6*S}"/>
+      <animate attributeName="y" dur="0.75s" repeatCount="indefinite"
+        keyTimes="0;0.666;1" values="${AY + 6*S};${AY + 6*S};${AY + 8*S}"/>
+    </rect>
+    <animate attributeName="opacity" dur="0.75s" repeatCount="indefinite"
+      keyTimes="0;0.665;0.666;0.85;0.999;1" values="0;0;1;1;0;0"/>
   </g>`;
 
   // ── cert rows

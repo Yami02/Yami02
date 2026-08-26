@@ -38,15 +38,21 @@
     <animate attributeName="opacity" values="0;0;1;1;0;0"
       keyTimes="0.00000;0.01730;0.01730;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="135.6;135.6;187.6;187.6;135.6"
+      keyTimes="0.00000;0.01730;0.04843;0.95849;1"
+      dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="width" values="52;52;0;0;52"
       keyTimes="0.00000;0.01730;0.04843;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <rect id="e1-cur" x="135.6" y="47"
     width="7" height="14" fill="#39FF14" opacity="0">
+    <animate attributeName="x" values="135.6;135.6;187.6;187.6;135.6"
+      keyTimes="0.00000;0.01730;0.04843;0.95849;1"
+      dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="opacity"
-      values="0;0;1;0;1;0;1;0;0;0"
-      keyTimes="0.00000;0.01730;0.02421;0.03805;0.05189;0.06572;0.04843;0.04843;0.95849;1"
+      values="0;1;1;0;1;0;0;0"
+      keyTimes="0.00000;0.01730;0.04843;0.05719;0.06595;0.07471;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <text id="e2" x="22" y="79"
@@ -90,15 +96,21 @@
     <animate attributeName="opacity" values="0;0;1;1;0;0"
       keyTimes="0.00000;0.19025;0.19025;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="135.6;135.6;328.6;328.6;135.6"
+      keyTimes="0.00000;0.19025;0.31477;0.95849;1"
+      dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="width" values="193;193;0;0;193"
       keyTimes="0.00000;0.19025;0.31477;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <rect id="e7-cur" x="135.6" y="153"
     width="7" height="14" fill="#39FF14" opacity="0">
+    <animate attributeName="x" values="135.6;135.6;328.6;328.6;135.6"
+      keyTimes="0.00000;0.19025;0.31477;0.95849;1"
+      dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="opacity"
-      values="0;0;1;0;1;0;1;0;0;0"
-      keyTimes="0.00000;0.19025;0.19716;0.21100;0.22484;0.23867;0.31477;0.31477;0.95849;1"
+      values="0;1;1;0;1;0;0;0"
+      keyTimes="0.00000;0.19025;0.31477;0.32353;0.33230;0.34106;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <text id="e8" x="22" y="185"
@@ -142,15 +154,21 @@
     <animate attributeName="opacity" values="0;0;1;1;0;0"
       keyTimes="0.00000;0.45659;0.45659;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="135.6;135.6;422.6;422.6;135.6"
+      keyTimes="0.00000;0.45659;0.64338;0.95849;1"
+      dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="width" values="287;287;0;0;287"
       keyTimes="0.00000;0.45659;0.64338;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <rect id="e13-cur" x="135.6" y="259"
     width="7" height="14" fill="#39FF14" opacity="0">
+    <animate attributeName="x" values="135.6;135.6;422.6;422.6;135.6"
+      keyTimes="0.00000;0.45659;0.64338;0.95849;1"
+      dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="opacity"
-      values="0;0;1;0;1;0;1;0;0;0"
-      keyTimes="0.00000;0.45659;0.46351;0.47734;0.49118;0.50502;0.64338;0.64338;0.95849;1"
+      values="0;1;1;0;1;0;0;0"
+      keyTimes="0.00000;0.45659;0.64338;0.65214;0.66090;0.66966;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <text id="e14" x="22" y="291"
@@ -188,15 +206,21 @@
     <animate attributeName="opacity" values="0;0;1;1;0;0"
       keyTimes="0.00000;0.77620;0.77620;0.95849;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="135.6;135.6;241.6;241.6;135.6"
+      keyTimes="0.00000;0.77620;0.84365;0.95849;1"
+      dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="width" values="106;106;0;0;106"
       keyTimes="0.00000;0.77620;0.84365;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <rect id="e18-cur" x="135.6" y="345"
     width="7" height="14" fill="#39FF14" opacity="0">
+    <animate attributeName="x" values="135.6;135.6;241.6;241.6;135.6"
+      keyTimes="0.00000;0.77620;0.84365;0.95849;1"
+      dur="14.46s" repeatCount="indefinite"/>
     <animate attributeName="opacity"
-      values="0;0;1;0;1;0;1;0;0;0"
-      keyTimes="0.00000;0.77620;0.78312;0.79696;0.81079;0.82463;0.84365;0.84365;0.95849;1"
+      values="0;1;1;0;1;0;0;0"
+      keyTimes="0.00000;0.77620;0.84365;0.85242;0.86118;0.86994;0.95849;1"
       dur="14.46s" repeatCount="indefinite"/>
   </rect>
   <text id="e19" x="22" y="377"
