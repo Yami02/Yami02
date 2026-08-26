@@ -242,10 +242,9 @@ ${els}
 //  ⚙  CERTIFICATIONS — edite aqui
 // ════════════════════════════════════════════════════════════════
 const CERTS = [
-  { label: 'eJPT',      full: 'eLearnSecurity Junior PenTester',         pct: 45, status: 'active' },
-  { label: 'Security+', full: 'CompTIA Security+',                        pct: 20, status: 'active' },
-  { label: 'PNPT',      full: 'TCM Security — Practical Network PenTest', pct: 0,  status: 'queued' },
-  { label: 'OSCP',      full: 'Offensive Security Certified Professional', pct: 0,  status: 'dream'  },
+  { label: 'HTB CPTS', full: 'HackTheBox Certified Penetration Testing Specialist', pct: 11, status: 'active' },
+  { label: 'OSCP',     full: 'Offensive Security Certified Professional',             pct: 0,  status: 'dream'  },
+  { label: 'TCM PMAT', full: 'Practical Malware Analysis & Triage — TCM Security',   pct: 0,  status: 'dream'  },
 ];
 
 // ── Certs SVG ─────────────────────────────────────────────────────────────
